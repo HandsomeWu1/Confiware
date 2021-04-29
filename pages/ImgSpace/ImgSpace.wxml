@@ -1,0 +1,14 @@
+<!-- <view class="cu-list grid col-3">
+  <view class="cu-item" wx:for="{{icon}}" wx:key wx:if="{{item.isShow}}">
+    <text class="cuIcon-{{item.name}} lg text-gray"></text>
+    <text>{{item.name}}</text>
+  </view>
+</view> -->
+<view class="cu-list mygrid col-3" >
+  <view class="cu-item" wx:for="{{ImgList}}" bindlongpress="delete" wx:for-index="index" data-index="{{index}}">
+   <image src="{{item.fileUrl}}" class="img" mode="aspectFill" bindtap="preview" data-src="{{item.fileUrl}}"></image>
+  </view>
+</view>
+<view class="bg-gradual-green padding radius text-center shadow-blur nav">
+  <text class="cuIcon-roundadd lg text-white add" bindtap="upload"></text> 
+</view>

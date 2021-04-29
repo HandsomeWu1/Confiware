@@ -1,0 +1,6 @@
+<view class="title"><input type="text" placeholder="标题"></input> </view>
+<view class="hr light"></view>
+<textarea name="" id="" cols="30" rows="10" class="area" placeholder="开始书写"></textarea>
+<view class="bg-gradual-green padding radius text-center shadow-blur nav">
+  <text class=" text-white add" bindtap="SaveFile">保存</text>
+</view>

@@ -1,0 +1,36 @@
+<!-- <button bindtap="register" type="primary" class="register" size="mini">重新录入人脸</button> -->
+<view class="head">
+    <view class="txt">Confiware</view>
+</view>
+<view class='container'>
+    <view class='home'>
+        <view class='camera' wx:if="{{isCamera == false}}">
+            <camera class="camerastyle" device-position="front" flash="off" binderror="error"
+                style="width: 200px; height: 200px;"></camera>
+            <image src="../../images/model.png" class="line" style="width: 200px; height:200px;"></image>
+        </view>
+        <view class='preview' wx:if="{{isCamera == true}}">
+            <image mode="widthFix" class="camerastyle" src="{{src}}" style="width: 200px; height: 200px;"></image>
+        </view>
+        <view style=" height: 40px;position: relative;top: 250px;right: 110px;">
+            <button wx:if="{{isCamera == false}}" class="weui-btn mybtn" bindtap="login"> 登录 </button>
+            <button wx:if="{{isCamera == true && isSuccess==true}}" class="weui-btn" bindtap="LoginSuccess"
+                type="primary" style="width:220px">
+                登录成功，点击跳转
+            </button>
+            <button wx:if="{{isCamera == true && isSuccess==false}}" class="weui-btn mybtn" bindtap="relogin" >
+                检测失败 </button>
+            <view class="mycontainer" wx:if="{{isCamera == true && isSuccess==true}}">
+                <canvas style="width: 80px; height: 40px; margin-left:-50px" canvas-id="firstCanvas"
+                    binderror="canvasIdErrorCallback"></canvas>
+                <canvas style="width: 80px; height: 40px;  margin-left:70px" canvas-id="secondCanvas"
+                    binderror="canvasIdErrorCallback"></canvas>
+                <text class="eye" style="margin-left:-240px">左眼相似度：{{left}}%</text>
+                <text class="eye" style="margin-left:-105px">右眼相似度：{{right}}%</text>
+            </view>
+            <view class="text" style="margin-left:5%">请把人脸放在中间</view>
+            <view class="text" > 脱掉眼镜并睁大眼睛</view>
+        </view>
+    </view>
+
+</view>

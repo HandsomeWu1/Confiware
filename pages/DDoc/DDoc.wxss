@@ -1,0 +1,15 @@
+/* pages/DDoc/DDoc.wxss */
+.title{
+  text-align: center;
+  font-size: large;
+  font-weight: 900;
+  width: 100%;
+
+}
+
+.article{
+  margin: 20px;
+}
+page{
+  background-color: #fff;
+}

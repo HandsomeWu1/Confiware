@@ -1,0 +1,6 @@
+<text class="td">为了保证信息安全，即将进行人脸验证</text>
+<image  src='/images/warning.PNG' class ="img"></image>
+<button bindtap="aa" class="btn1">
+   <text>同意并开始识别</text>
+</button>
+

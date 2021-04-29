@@ -1,0 +1,34 @@
+/* pages/DDoc/DDoc.wxss */
+page{
+  background-color: #fff;
+}
+.title{
+  font-size: large;
+  font-weight: 900;
+  width: 100%;
+  text-align: center;
+}
+.nav{
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  height: 120rpx;
+}
+.add{
+  font-size: 15px;
+  font-weight: 800;
+}
+.article{
+  margin: 20px;
+}
+
+.area{
+  margin-top: 20px;
+  margin-left: 15px;
+  font-size: large;
+}
+
+.hr{
+  margin-top: 15px;
+  border-bottom:1px solid grey
+}

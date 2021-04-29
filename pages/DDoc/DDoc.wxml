@@ -1,0 +1,5 @@
+<view class="title">我的密码</view>
+<view class="article">
+  <view>微信密码:123456</view>
+  <view>qq密码:654321</view>
+</view>

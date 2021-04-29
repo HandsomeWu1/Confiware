@@ -1,0 +1,12 @@
+<view class="userbox" style="height:200rpx" bindtap="modify">
+  <image src="{{userInfo.avatarUrl}}" class="cu-avatar xl round avator"></image>
+  <view class="username">{{userInfo.nickName}}</view>
+</view>
+<view class="img text-bold  light mybg" bindtap="GoInSpace" data-name="图像">
+  <image src="../../images/img.png" mode="aspectFit" class="pic"></image>
+  <view class="text">图像</view>
+</view>
+<view class="img text-bold  light mybg" bindtap="GoInSpace">
+  <image src="../../images/file.png" mode="aspectFit" class="pic"></image>
+  <view class="text">文件</view>
+</view>

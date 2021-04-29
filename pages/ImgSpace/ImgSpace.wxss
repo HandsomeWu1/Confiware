@@ -1,0 +1,25 @@
+/* pages/Space/Space.wxss */
+page{
+  background-color: var(--grey);
+    color: var(--white);
+}
+.img {
+  width: 187rpx;
+  height: 188rpx;
+  background-color: pink;
+}
+
+.mygrid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav{
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  height: 120rpx;
+}
+.add{
+  font-size: 30px;
+}

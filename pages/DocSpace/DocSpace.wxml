@@ -1,0 +1,16 @@
+<view class="cu-card article " wx:for="{{ResFiles}}" wx:for-index="index" bindlongpress="delete" data-index="{{index}}" bindtap="GoToDoc">
+  <view class="cu-item shadow" >
+    <view class="title">
+      <view class="text-cut">{{item.fileName}}</view>
+    </view>
+    <view class="content" style="height:50px">
+      <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1794763709,1009260755&fm=26&gp=0.jpg" mode="aspectFill" style="height:50px;width:50px"></image>
+      <view class="desc">
+        <view class="text-content">{{item.fileName}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="bg-gradual-green padding radius text-center shadow-blur nav">
+  <text class="cuIcon-roundadd lg text-white add" bindtap="upload"></text>
+</view>

@@ -1,0 +1,116 @@
+/* pages/home/home.wxss */
+page{
+  background-image: url("https://i.postimg.cc/SRwFbBqB/7443a31b6a19e5630b94a6538ff9bdd1.gif");
+  background-size: contain;
+}
+.line{
+  left: 180rpx; 
+  bottom: 380rpx;
+}
+.eye{
+  float: left;
+  margin-top: 10px;
+  position: absolute;
+  top: 100px;
+  font-size: 13px;
+  color: white;
+}
+.home{
+  width: 100vw;
+  overflow: hidden;
+  min-height: 100vh;
+}
+.text{
+  /* margin-left: 30%; */
+  /* width: 300px; */
+  font-size: 20px;
+  font-weight: 800;
+  text-align: 'center';
+  color: #2f5899;
+}
+.home .msg{
+  width: 100vw;
+  height: 38rpx;
+  font-size: 24rpx;
+  line-height: 38rpx;
+  background: #FF6666;
+  margin-bottom: 20rpx;
+  color: #333333;
+  padding-left: 20rpx;
+}
+
+.home .camera,.preview{
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.home{
+  display: flex;
+}
+
+.home{
+  flex: 2;
+  padding: 20rpx;
+  font-size: 28rpx;
+  line-height: 80rpx;
+  color: #666666;
+}
+
+.home{
+  flex: 1;
+  height: 110px;
+  padding: 20rpx;
+}
+
+.home .bottom{
+  width: 100vw;
+  position: fixed;
+  bottom: 5vw;
+}
+
+.home .bottom button{
+  width: 90vw;
+  margin: 0 auto;
+}
+.camerastyle{
+  border-radius: 50%;
+  margin-left: 40%;
+  border: 5px solid #2f5899;
+}
+
+.register{
+  height: 30px;
+  position: absolute;
+  right: 0;
+  width: 90px;
+}
+.mycontainer{
+  position: flex;
+}
+canvas{
+  position: relative;
+  float: left;
+  margin-top: 30px;
+  border:1px solid red;
+  margin-bottom: 100px;
+}
+
+.mybtn{
+  background-color: #2f5899;
+  color:white;
+}
+
+.head{
+  height: 70px;
+  width: 100%;
+  background-color: white;
+  color: black;
+  overflow: hidden;
+}
+.txt{
+  color: black;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+}

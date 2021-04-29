@@ -1,0 +1,27 @@
+<!--pages/add/add.wxml-->
+<!-- <view class="cu-form-group margin-top">
+  <view class="title" >用户名</view>
+  <input placeholder="请输入用户名" bindinput="bindInputUser"></input>
+</view>
+<view class="cu-form-group">
+  <view class="title" bindinput="bindInputPwd">密码</view>
+  <input placeholder="请输入密码"></input>
+</view> -->
+
+<view class='container'>
+  <view class='add'>
+    <view class='camera' wx:if="{{isCamera == false}}">
+      <camera device-position="front" flash="off" binderror="error" class="mycamera"></camera>
+    </view>
+    <view class='preview' wx:if="{{isCamera == true}}">
+      <image mode="widthFix" src="{{src}}" class="mycamera"></image>
+    </view>
+    <view class='btn'>
+      <button wx:if="{{isCamera == false}}" type="default" bindtap="takePhoto">拍照</button>
+      <button wx:if="{{isCamera == true}}" type="default" bindtap="reTakePhoto">重拍</button>
+    </view>
+    <view class='bottom'>
+      <button class="weui-btn" bindtap="addUser" type="primary"> 保存 </button>
+    </view>
+  </view>
+</view>
